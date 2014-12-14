@@ -1,0 +1,12 @@
+DICOM  defines Image IODs by storing the rows and columns as unsigned short integer. This means that an image can only be at most of size 2^16 * 2^16 pixels. This is a limitation for Microscopy Images as, for example, WSI can go up to Terabytes in extreme conditions.In addition to these “hard” restrictions, another consideration is due to large amount of information in these images rapid panning and zooming should also be supported.
+
+In this project we removed this restrictions and supported rapid panning and zoomimg along with compression. The codework is included in gdcm library with name gdcmstream.
+
+The link of different modules is mentioned below.
+http://gdcm.sourceforge.net/wiki/index.php/Gdcmstream
+
+DICOM LINK:
+http://sourceforge.net/p/gdcm/gdcm/ci/179d153c384bd32277a25d86e36a083f5b92c273/tree/Applications/Cxx/gdcmstream.cxx
+
+
+
